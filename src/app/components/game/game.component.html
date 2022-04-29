@@ -1,0 +1,15 @@
+<h3>Player Turn : {{player_turn}}</h3>
+<div class="game-container"></div>
+
+<div class="game-container">
+
+  <div class="game-board">
+    <div *ngFor="let square of board;let i=index" (click)="handlePlayer(i)" [ngClass]="{'playerO':square=='O'}
+    " class=" square">{{square}}</div>
+
+  </div>
+  <div class="circle"></div>
+  <div class="circle-1"></div>
+
+
+</div>
